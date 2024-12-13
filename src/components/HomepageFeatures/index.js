@@ -4,46 +4,46 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'PoW para desarrolladores',
+    title: 'Blockchain forever',
     description: (
       <>
-        <li> Optimized file format that reduces the number and size of I/O requests.</li>
-        <li> Smart I/O scheduling that maximizes throughput.</li>
-        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
-        <li> Powered by tantivy, the fastest search engine library.</li>
+        <li> Robust and proven code.</li>
+        <li> PoW for good distribution.</li>
+        <li> ASIC resistant to avoid mining centralization.</li>
+        <li> Assets in Layer 1.</li>
       </>
     ),
   },
   {
-    title: 'IoT descentralizado',
+    title: 'Decentralized IoT',
     description: (
       <>
-        <li> Optimized file format that reduces the number and size of I/O requests.</li>
-        <li> Smart I/O scheduling that maximizes throughput.</li>
-        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
-        <li> Powered by tantivy, the fastest search engine library.</li>
+        <li> Optimized for ESP32 based equipment.</li>
+        <li> Distributed nodes for low latency access.</li>
+        <li> Unique identifiers to assign to IoT.</li>
+        <li> Future upgrade to RISC-V equipment.</li>
       </>
     ),
   },
   {
-    title: 'Diseños libres',
+    title: 'For developers',
     description: (
       <>
-        <li> Optimized file format that reduces the number and size of I/O requests.</li>
-        <li> Smart I/O scheduling that maximizes throughput.</li>
-        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
-        <li> Powered by tantivy, the fastest search engine library.</li>
+        <li> Documentation for getting started in Neurai development.</li>
+        <li> Free software in the community guithub.</li>
+        <li> Access to courses to learn python, esp32 and others.</li>
+        <li> Prizes for developers.</li>
       </>
     ),
   },
   {
-    title: 'Diseños libres',
+    title: 'Free designs',
     description: (
       <>
-        <li> Optimized file format that reduces the number and size of I/O requests.</li>
-        <li> Smart I/O scheduling that maximizes throughput.</li>
-        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
-        <li> Powered by tantivy, the fastest search engine library.</li>
+        <li> Free IoT board designs.</li>
+        <li> Guides to use KiCad for design creation.</li>
+        <li> All designs created in Neurai will be Open Source.</li>
+        <li> Prizes for designers.</li>
       </>
     ),
   },

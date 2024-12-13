@@ -37,8 +37,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Connecting the real world with blockchain <head />">
+      title={`${siteConfig.title}`}
+      description="Connecting the real world with blockchain.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
