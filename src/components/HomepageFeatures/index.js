@@ -4,32 +4,46 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'PoW para desarrolladores',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <li> Optimized file format that reduces the number and size of I/O requests.</li>
+        <li> Smart I/O scheduling that maximizes throughput.</li>
+        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
+        <li> Powered by tantivy, the fastest search engine library.</li>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'IoT descentralizado',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <li> Optimized file format that reduces the number and size of I/O requests.</li>
+        <li> Smart I/O scheduling that maximizes throughput.</li>
+        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
+        <li> Powered by tantivy, the fastest search engine library.</li>
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Diseños libres',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <li> Optimized file format that reduces the number and size of I/O requests.</li>
+        <li> Smart I/O scheduling that maximizes throughput.</li>
+        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
+        <li> Powered by tantivy, the fastest search engine library.</li>
+      </>
+    ),
+  },
+  {
+    title: 'Diseños libres',
+    description: (
+      <>
+        <li> Optimized file format that reduces the number and size of I/O requests.</li>
+        <li> Smart I/O scheduling that maximizes throughput.</li>
+        <li> Written in Rust, no GC, vectorized processing, and SIMD included.</li>
+        <li> Powered by tantivy, the fastest search engine library.</li>
       </>
     ),
   },
@@ -37,11 +51,10 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--6' , styles.featureItem)}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
       </div>
-      <div className="text--center padding-horiz--md">
+      <div className="text--left padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
       </div>
@@ -52,7 +65,9 @@ function Feature({Svg, title, description}) {
 export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
-      <div className="container">
+      
+      <div className="container" style={{ width: '100%', maxWidth: '100%' }}>
+
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
@@ -62,3 +77,4 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+

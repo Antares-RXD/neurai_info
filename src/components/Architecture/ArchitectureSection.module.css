@@ -1,0 +1,33 @@
+.architectureSection {
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.imageBlock {
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  max-width: 80%;
+  height: auto;
+  filter: invert(0%);
+}
+
+
+[data-theme='dark'] {
+  .image {
+    filter: invert(85%);
+  }
+}

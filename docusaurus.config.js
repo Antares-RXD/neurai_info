@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Neurai Info',
-  tagline: 'Information about Neurai',
-  favicon: 'img/favicon.ico',
+  title: 'Neurai',
+  tagline: 'Technical documentation about neurai',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://neurai.info',
@@ -31,6 +31,7 @@ const config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+  
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -45,23 +46,9 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          routeBasePath: '',
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -74,27 +61,42 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/neurai-new-header.png',
+      announcementBar: {
+        id: 'support_us',
+        content:
+          'Oficial website <a target="_blank" rel="noopener noreferrer" href="https://neurai.org">Neurai.org</a>',
+        backgroundColor: '#000000',
+        textColor: '#eeeeee',
+        isCloseable: true,
+      },
       navbar: {
-        title: 'Neurai docs',
+        title: 'Neurai',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Neurai.info',
+          src: 'img/logo.png',
         },
+        
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Introduction',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/neuraicommunity/neurai_info',
             label: 'GitHub',
             position: 'right',
           },
         ],
       },
+        metadata: [
+    {
+      name: 'google-font',
+      content: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
+    },
+  ],
       footer: {
         style: 'dark',
         links: [
@@ -102,8 +104,8 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introduction',
+                to: '/introduction',
               },
             ],
           },
@@ -111,16 +113,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/neuraiproject',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discord.gg/dxJSrSeXjF',
               },
               {
                 label: 'X',
-                href: 'https://x.com/docusaurus',
+                href: 'https://x.com/neuraiproject',
               },
             ],
           },
@@ -129,12 +131,12 @@ const config = {
             items: [
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/NeuraiProject',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Neurai.org`,
       },
       prism: {
         theme: prismThemes.github,

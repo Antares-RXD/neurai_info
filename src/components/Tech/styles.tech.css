@@ -1,0 +1,28 @@
+.partner-banner {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  border: 2px solid black;
+  padding: 10px;
+}
+
+.partner-logo {
+  width: auto;
+  height: 50px;
+  margin: 20px;
+}
+
+/* Reglas para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .partner-banner {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+      max-width: 120px; 
+  }
+}

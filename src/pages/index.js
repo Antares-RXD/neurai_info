@@ -3,7 +3,9 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import Partners from '@site/src/components/Partners';
+import Tech from '@site/src/components/Tech';
+import Arch from '@site/src/components/Architecture';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
@@ -12,15 +14,18 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
+
+        <Heading as="h1special" className="hero__title">
+            {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+
+       
+         <p className="hero__subtitle">{siteConfig.tagline}</p> 
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/introduction">
+            Start here
           </Link>
         </div>
       </div>
@@ -33,10 +38,12 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="Connecting the real world with blockchain <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <Partners />
+        <Arch />
       </main>
     </Layout>
   );

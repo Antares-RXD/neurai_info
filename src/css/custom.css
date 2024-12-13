@@ -6,25 +6,144 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #593196; /* Color principal */
+  --ifm-color-primary-dark: #4f2b87; /* Más oscuro */
+  --ifm-color-primary-darker: #462678; /* Aún más oscuro */
+  --ifm-color-primary-darkest: #3e2169; /* El más oscuro */
+  --ifm-color-primary-light: #6b47a3; /* Más claro */
+  --ifm-color-primary-lighter: #7f5fb1; /* Aún más claro */
+  --ifm-color-primary-lightest: #9b84c6; /* El más claro */
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(89, 49, 150, 0.1); /* Fondeado sutil */
+  --ifm-font-family-base: 'Inter', sans-serif; /* Texto general */
+  --ifm-font-family-monospace: 'Fira Code', monospace; /* Código */
+  --ifm-navbar-height: 5vh;
+ 
+  .hero--primary {
+    background-image: url('/img/planet_transparent.svg');
+    background-color: #afafaf;
+    filter: invert(100%);
+  }
+  .hero--primary h1special {
+    color: #ffffff;
+    font-weight: 900;
+    font-size:12rem;
+    font-family: Sohne;
+  }
+
+  .hero--primary p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Sohne Mono;
+  }
+
+  @media (max-width: 996px) {
+    .hero--primary h1special {
+      color: #ffffff;
+      font-weight: 900;
+      font-size:6rem;
+      font-family: Sohne;
+    }
+
+  }
+  
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Colores para el modo oscuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary: #9b84c6; /* Un morado más claro */
+  --ifm-color-primary-dark: #8a76b4; /* Más oscuro */
+  --ifm-color-primary-darker: #7967a2; /* Aún más oscuro */
+  --ifm-color-primary-darkest: #685891; /* El más oscuro */
+  --ifm-color-primary-light: #b29bd4; /* Más claro */
+  --ifm-color-primary-lighter: #c8b2e2; /* Aún más claro */
+  --ifm-color-primary-lightest: #ded1ef; /* El más claro */
+  --docusaurus-highlighted-code-line-bg: rgba(155, 132, 198, 0.3); /* Fondeado sutil */
+  --ifm-font-family-base: 'Inter', sans-serif; /* Texto general */
+  --ifm-font-family-monospace: 'Fira Code', monospace; /* Código */
+
+   
+  .hero--primary {
+    background-image: url('/img/planet_transparent.svg');
+    background-color: #afafaf;
+    filter: invert(0%);
+  }
+  .hero--primary h1special {
+    color: #ffffff;
+    font-weight: 900;
+    font-size:12rem;
+    font-family: Sohne;
+  }
+
+  .hero--primary p {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: Sohne Mono;
+  }
+
+  @media (max-width: 996px) {
+    .hero--primary h1special {
+      color: #ffffff;
+      font-weight: 900;
+      font-size:8rem;
+      font-family: Sohne;
+    }
+
+  }
+}
+
+body {
+  font-family: var(--ifm-font-family-base);
+}
+
+h1, h2, h3 {
+  font-weight: 600; 
+  font-family: Sohne Mono;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p, li {
+  font-size:18px;
+  font-family: Sohne;
+}
+
+.hero--primary {
+  background-size: cover; 
+  background-size: auto 100%;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 95vh;
+}
+
+@font-face {
+  font-family: Sohne Mono;
+  src: url('/fonts/soehne-mono-web-kraftig.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Sohne Mono;
+  font-weight: 700;
+  src: url('/fonts/soehne-mono-web-dreiviertelfett.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Sohne;
+  src: url('/fonts/soehne-web-buch.woff2') format('woff2'),
+}
+
+@font-face {
+  font-family: Sohne;
+  font-weight: 700;
+  src: url('/fonts/soehne-web-halbfett.woff2') format('woff2'),
 }
