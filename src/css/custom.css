@@ -29,6 +29,7 @@
     font-weight: 900;
     font-size:12rem;
     font-family: Sohne;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255), 0 0 0.2em rgba(255, 255, 255, 0.3), 0 0 0.2em rgba(255, 255, 255, 0.3);
   }
 
   .hero--primary p {
@@ -73,6 +74,7 @@
     font-weight: 900;
     font-size:12rem;
     font-family: Sohne;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255), 0 0 0.2em rgba(255, 255, 255, 0.3), 0 0 0.2em rgba(255, 255, 255, 0.3);
   }
 
   .hero--primary p {
@@ -85,7 +87,7 @@
     .hero--primary h1special {
       color: #ffffff;
       font-weight: 900;
-      font-size:8rem;
+      font-size:6rem;
       font-family: Sohne;
     }
 

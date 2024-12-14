@@ -2,7 +2,7 @@ import React from 'react';
 import './styles.partner-banner.css';
 
 const Partners = () => {
-  const partners = Array.from({ length: 10 }, (_, i) => `partner${i + 1}.svg`);
+  const partners = Array.from({ length: 12 }, (_, i) => `partner${i + 1}.svg`);
 
   return (
     <div className="carousel-container">
