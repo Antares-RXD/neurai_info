@@ -26,22 +26,21 @@
     filter: invert(100%);
   }
   .hero--primary h1special {
-    color: #ffffff;
+    color: #000000;
     font-weight: 900;
     font-size:12rem;
     font-family: Sohne;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255), 0 0 0.2em rgba(255, 255, 255, 0.3), 0 0 0.2em rgba(255, 255, 255, 0.3);
+
   }
 
   .hero--primary p {
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     font-family: Sohne Mono;
   }
 
   @media (max-width: 996px) {
     .hero--primary h1special {
-      color: #ffffff;
       font-weight: 900;
       font-size:6rem;
       font-family: Sohne;
@@ -71,22 +70,20 @@
     filter: invert(0%);
   }
   .hero--primary h1special {
-    color: #ffffff;
+    color: #000000;
     font-weight: 900;
     font-size:12rem;
     font-family: Sohne;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255), 0 0 0.2em rgba(255, 255, 255, 0.3), 0 0 0.2em rgba(255, 255, 255, 0.3);
   }
 
   .hero--primary p {
-    color: #ffffff;
+    color: #000000;
     font-size: 2rem;
     font-family: Sohne Mono;
   }
 
   @media (max-width: 996px) {
     .hero--primary h1special {
-      color: #ffffff;
       font-weight: 900;
       font-size:6rem;
       font-family: Sohne;
