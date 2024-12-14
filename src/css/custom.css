@@ -18,6 +18,7 @@
   --ifm-font-family-base: 'Inter', sans-serif; /* Texto general */
   --ifm-font-family-monospace: 'Fira Code', monospace; /* Código */
   --ifm-navbar-height: 5vh;
+  --ifm-container-width-xl: 1600px;
  
   .hero--primary {
     background-image: url('/img/planet_transparent.svg');
