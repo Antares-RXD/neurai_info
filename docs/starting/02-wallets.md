@@ -34,16 +34,16 @@ For added security, it is advisable to destroy the wallet and restore it with th
 ## The platforms where they operate
 </center>
 
-| Plataform         | Neurai-QT   | Electrum         |  OneKey       | Webwallet  | Komodo     | Vidulum    | 
-| ---               | ---         | ---              |   ---         |   ---      |   ---      |   ---      |
-| Windows           | **Yes**         | **Yes**              | **Yes**           | No         | **Yes**        | **Yes**        |
-| Linux             | **Yes**         | **Yes**              | **Yes**           | No         | **Yes**        | No         |
-| MAC               | No          | **Yes**              | **Yes**           | No         | Yes        | No         |
-| Browser           | No          | No               | **Yes**           | **Yes**        | Yes        | **Yes**        |
-| Browser Addon     | No          | No               | **Yes**           | No         | No         | No         |
-| HardwareWallet    | No          | No               | **Yes**           | No         | No         | No         |
-| Android           | No          | No               | **Yes**           | No         | **Yes**        | **Yes**        |
-| Iphone            | No          | No               | **Yes**           | No         | **Yes**        | **Yes**        |
+| Plataform         | Neurai-QT       | Electrum         |  OneKey           | Webwallet  | Komodo         | Vidulum    | 
+| ---               | ---             | ---              |   ---             |   ---      |   ---          |   ---      |
+| Windows           | **Yes**         | **Yes**          | **Yes**           | No         | **Yes**        | **Yes**    |
+| Linux             | **Yes**         | **Yes**          | **Yes**           | No         | **Yes**        | No         |
+| MAC               | No              | **Yes**          | **Yes**           | No         | **Yes**        | No         |
+| Browser           | No              | No               | **Yes**           | **Yes**    | **Yes**        | **Yes**    |
+| Browser Addon     | No              | No               | **Yes**           | No         | No             | No         |
+| HardwareWallet    | No              | No               | **Yes**           | No         | No             | No         |
+| Android           | No              | No               | **Yes**           | No         | **Yes**        | **Yes**    |
+| Iphone            | No              | No               | **Yes**           | No         | **Yes**        | **Yes**    |
 
 ---
 
